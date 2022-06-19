@@ -1,5 +1,5 @@
 <template>
-<header class="sticky top-0 z-50">
+<header class="top-0 z-50">
     <nav class="flex  sm:flex-col xs:flex-col items-center justify-between px-8 py-4 ">
         <button  @click="$router.push('/')"><span class="font-semibold text-2xl sm:invisible xs:invisible "> Joshua ... </span></button>
         <div class="flex  items-end justify-end space-x-4">
