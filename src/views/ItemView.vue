@@ -1,12 +1,12 @@
 <template>
 <div class="flex justify-end">
     <div class="divider w-20 fixed"></div>
-    <button class="btn btn-outline bottom-10 right-0 fixed" @click="$router.go(-1)">Back</button>
+    <button class="btn btn-outline bottom-10 right-0 fixed xs:btn-md sm:btn-md  md:btn-md lg:btn-lg xl:btn-lg 2xl:btn-lg" @click="$router.go(-1)">Back</button>
 </div>
 <section v-if="id == 1">
     <!-- <BlookItem :id="id"/> -->
-    <div class="hero ">
-        <div class="hero-content flex-col lg:flex-row">
+    <div class="hero">
+        <div class="hero-content flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row lg:p-8 md:p-4 sm:p-4 xs:p-8">
             <img :src="pic1" class="max-w-xs rounded-lg shadow-2xl" />
             <div class="pl-8">
                 <h1 class="text-2xl font-bold">BLook: Mobile Booking Application for Salons,
@@ -17,8 +17,8 @@
                     the user or administrator. Even when purchasing anything online, the
                     item is reserved for the potential buyer. The more resources and other
                     dynamic elements a system possesses, the more processing must be performed. </p>
-                <span class="flex justify-between">
-                    <div>
+                <span class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 sm:space-y-2 xs:space-y-2">
+                    <div class="md:pb-4">
                         <p class="font-semibold">Client</p>
                         <p>Anyone</p>
                     </div>
@@ -35,8 +35,9 @@
         </div>
     </div>
     <!-- Wireframes -->
-    <div class="flex justify-evenly items-center py-8">
-        <div class="space-y-4">
+    <!-- grid grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 md:space-y-4 sm:space-y-4 xs:space-y-4 place-items-center self-center place-content-center justify-self-center justify-center justify-items-center content-center	items-center py-8 -->
+    <div class="flex md:flex-col sm:flex-col xs:flex-col justify-center items-center gap-4 p-4">
+        <div class="space-y-2">
             <span class="text-2xl font-bold"> Client Application </span>
             <div class="carousel rounded-box w-96">
                 <div v-for="clientimg in clienImages" :key="clientimg.clientApp" class="carousel-item w-1/2 p-4 border-gray-500 border">
@@ -44,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="space-y-4">
+        <div class="space-y-2">
             <span class="text-2xl font-bold"> Shop Owner Application </span>
             <div class="carousel rounded-box w-96">
                 <div v-for="ownerImg in ownerImages" :key="ownerImg.clientApp" class="carousel-item w-1/2 p-4 border-gray-500 border">
@@ -52,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="space-y-4">
+        <div class="space-y-2">
             <span class="text-2xl font-bold"> Admin Application </span>
             <div class="carousel rounded-box w-96">
                 <div v-for="adminImg in adminImages" :key="adminImg.clientApp" class="carousel-item w-1/2 p-4 border-gray-500 border">
@@ -62,8 +63,8 @@
         </div>
     </div>
     <div class="hero ">
-        <div class="hero-content flex-col lg:flex-row">
-            <div class="pr-8">
+        <div class="hero-content flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row lg:p-8 md:p-4 sm:p-4 xs:p-8">
+            <div class="pr-8 ">
                 <h1 class="text-2xl font-bold">RESULTS</h1>
                 <p class="py-6">
                     According to the findings of the usability test that was done in the areas of shop owners and clients, the users
@@ -71,12 +72,12 @@
                     was able to book their desired services without having to walk to the shop. The shop owner was
                     able to evaluate the appointments set by the user and accept or reject them in a timely manner.
                 </p>
-                <div class="flex justify-evenly">
+                <div class="flex md:flex-col sm:flex-col xs:flex-col justify-center space-x-8 md:space-y-4 sm:space-y-4 xs:space-y-4 md:items-center sm:items-center xs:items-center">
                     <div class="flex">
                         <img :src="result1" class=" h-32" />
                         <img :src="result2" class=" h-32" />
                     </div>
-                    <div class="w-1/2">
+                    <div class="w-1/2 md:w-full sm:w-full xs:w-full">
                         <span class="text-lg font-semibold">Testing Results</span>
                         <p>
                             The sub-system for the customer and shop owner application was among the test results.
