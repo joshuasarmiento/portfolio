@@ -48,7 +48,7 @@ export default {
     <div class="pt-10 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
         <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
             <div class="tooltip mb-10" data-tip="Hire me!">
-                <a download="JoshuaSarmiento-Resume.pdf" href="/files/Stoman-Resume.pdf" class="text-gray-600 hover:text-indigo-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-pink-200 shadow-sm p-3 duration-500">
+                <a download="JoshuaSarmiento-Resume.pdf" target="__blank" href="./files/JoshuaSarmientoResume.pdf" class="text-gray-600 hover:text-indigo-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-pink-200 shadow-sm p-3 duration-500">
                     Download CV
                 </a>
             </div>

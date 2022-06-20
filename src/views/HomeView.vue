@@ -2,7 +2,7 @@
 <section class="container mx-auto">
     <div class="flex md:flex-col sm:flex-col xs:flex-col justify-between items-center max-full">
         <div class="flex flex-col text-left w-1/2 md:w-3/4 sm:w-2/3 xs:w-2/3 px-8">
-            <span class="text-2xl font-semibold pb-2">Hi, I'm Joshua</span>
+            <span class="text-2xl font-semibold pb-2 primary-color">Hi, I'm Joshua</span>
             <article>
                 Front End Dev, Design, <span class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400  rounded-lg border hover:bg-gray-100 shadow-sm p-2 duration-500">Single :)</span>
             </article>

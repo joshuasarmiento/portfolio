@@ -16,10 +16,10 @@
         </section>
     </div>
     <section class="flex-col justify-start items-center px-8 py-8">
-        <div class="text-lg font-semibold text-gray-600 pb-4">
+        <div class="text-lg font-semibold text-primary-color pb-4">
             Employment
         </div>
-        <div v-for="em in employment" :key="em.title" class="text-gray-600 rounded-lg border shadow-sm p-6 w-fit space-y-2">
+        <div v-for="em in employment" :key="em.title" class="text-primary-color rounded-lg border shadow-sm p-6 w-fit space-y-2">
             <span class="font-semibold">{{em.title}}</span>
             <article>{{em.add}} <span class="text-sm"> {{em.status}}</span></article>
             <p aria-label="Date of employment">{{em.date}}</p>

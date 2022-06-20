@@ -1,7 +1,7 @@
 <template>
 <section class="px-8">
     <div class="space-y-2 flex flex-col items-start justify-center pb-8">
-        <span class="text-2xl font-semibold">Projects</span>
+        <span class="text-2xl font-semibold text-primary-color">Projects</span>
         <p>This page contains some of the projects I've worked on. Other projects are currently working on.</p>
     </div>
     <div class="flex gap-2 py-4">
@@ -17,7 +17,7 @@
         <div v-for="pic in filteredProjects" :key="pic.id" class="card w-fit bg-base-100 shadow-xl">
             <figure><img :src="pic.url" :alt="pic.details" /></figure>
             <div class="card-body">
-                <h2 class="card-title">{{pic.title}}</h2>
+                <h2 class="card-title text-primary-color">{{pic.title}}</h2>
                 <p>{{pic.descrip}}</p>
                 <div class="card-actions justify-end">
                     <button v-if="pic.nodata == false" class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" @click="$router.push('/item/ ' + pic.id)">View</button>
