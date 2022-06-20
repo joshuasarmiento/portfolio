@@ -1,5 +1,47 @@
 <template>
-  <div class="flex justify-center items-center">
-    <h1>About page</h1>
-  </div>
+<section class="container mx-auto">
+    <div class="flex items-end justify-start">
+        <div class="flex-col justify-between items-center max-full px-8 space-y-4">
+            <span class="text-2xl font-semibold">About Joshua</span>
+            <img :src="p1" alt="Section One Image" class="h-48 sm:h-64 xs:h-56 shadow-sm rounded-lg border" @mouseover="hover = true" @mouseleave="hover = false" />
+        </div>
+        <section class="w-2/3">
+            <article>
+                {{article}}
+            </article>
+            <div class="divider w-10"></div>
+            <p class="text-sm">
+                {{text}}
+            </p>
+        </section>
+    </div>
+    <section class="flex-col justify-start items-center px-8 py-8">
+        <div class="text-lg font-semibold text-gray-600 pb-4">
+            Employment
+        </div>
+        <div v-for="em in employment" :key="em.title" class="text-gray-600 rounded-lg border shadow-sm p-6 w-fit space-y-2">
+            <span class="font-semibold">{{em.title}}</span>
+            <article>{{em.add}} <span class="text-sm"> {{em.status}}</span></article>
+            <p aria-label="Date of employment">{{em.date}}</p>
+        </div>
+    </section>
+</section>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            p1: require("../assets/img/joshua.jpg"),
+            article: 'A fresh graduate in Information Technology seeking to broaden my experiences and expertise. A well-rounded person with an interest in front-end web or mobile development, as well as the UI/UX field.',
+            text: "I love design, user interfaces, web or mobile development and that's what I'm passionate about",
+            employment: [{
+                title: 'Web Developer',
+                add: "CHED, Legazpi City",
+                status: 'Intern | Remote',
+                date: 'Jan 2022 - Jun 2022 '
+            }, ],
+        }
+    },
+}
+</script>

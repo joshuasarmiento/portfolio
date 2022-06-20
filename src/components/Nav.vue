@@ -1,14 +1,18 @@
 <template>
-<header class="top-0 z-50">
-    <nav class="flex  sm:flex-col xs:flex-col items-center justify-between px-8 py-4 ">
-        <button  @click="$router.push('/')"><span class="font-semibold text-2xl sm:invisible xs:invisible "> Joshua ... </span></button>
-        <div class="flex  items-end justify-end space-x-4">
-            <button class="btn btn-outline xs:btn-md sm:btn-md  md:btn-md lg:btn-lg xl:btn-lg 2xl:btn-lg" @click="$router.push('/')">Work</button>
-            <button class="btn btn-outline xs:btn-md sm:btn-md  md:btn-md lg:btn-lg xl:btn-lg 2xl:btn-lg" @click="$router.push('/about')">About</button>
-            <!-- <router-link to="/about">About</router-link> -->
+<nav class="container mx-auto ">
+    <div class="sm:flex-col xs:flex-col items-center justify-between px-8 py-4 z-10 max-w-full block sm:flex sm:justify-between sm:items-center my-6">
+        <div class="flex justify-between items-center sm:px-0">
+            <button @click="$router.push('/')"><span class="font-semibold text-2xl sm:invisible xs:invisible text-gray-500"> JOSHUA </span></button>
+            <div class="flex  items-end justify-end space-x-4">
+                <router-link class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" to="/">Work</router-link>
+                <router-link class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" to="/about">About</router-link>
+                <router-link class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" to="/project">Project</router-link>
+                <!-- <router-link to="/about">About</router-link> -->
+            </div>
         </div>
-    </nav>
-</header>
+
+    </div>
+</nav>
 </template>
 
 <script>

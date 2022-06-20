@@ -35,6 +35,16 @@ module.exports = {
           fontFamily: {
             body: ['Montserrat', 'sans-serif']
           },
+          container: {
+            padding: {
+              DEFAULT: '2rem',
+              xs: '2rem',
+              sm: '3rem',
+              lg: '6rem',
+              xl: '7rem',
+              '2xl': '9rem',
+            },
+          },
       },
     },
     plugins: [require("daisyui")],

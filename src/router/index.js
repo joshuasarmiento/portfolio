@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import ItemView from '../views/ItemView.vue'
+import Project from '../views/Project.vue'
 import NotFound404 from '../notFound.vue'
 
 const routes = [
@@ -14,6 +15,11 @@ const routes = [
     path: '/about',
     name: 'about',
     component: About
+  },
+  {
+    path: '/project',
+    name: 'project',
+    component: Project
   },
   {
     path: '/item/:id',

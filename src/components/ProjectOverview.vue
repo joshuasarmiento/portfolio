@@ -1,109 +1,92 @@
 <template>
-<section class="">
-    <!-- <span class="text-medium flex py-2">Work</span> -->
-    <div class="pin_container hero-contentt gap-0.5">
-        <div v-for="pic in pict" :key="pic.id" class="card_small">
-            <div class="card">
-                <img :src="pic.url" :alt="pic.details">
-                <button v-if="pic.nodata == false" class="btn btn-outline border-y-0" @click="$router.push('/item/ ' + pic.id)">View</button>
-                <button v-else disabled="disabled"  class="btn btn-outline border-y-0" @click="$router.push('/item/ ' + pic.id)">View</button>
+<section class="px-8">
+    <div class="space-y-2 flex flex-col items-start justify-center pb-8">
+        <span class="text-2xl font-semibold">Projects</span>
+        <p>This page contains some of the projects I've worked on. Other projects are currently working on.</p>
+    </div>
+    <div class="flex gap-2 py-4">
+        <span class="rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500 cursor-pointer">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="text-black">
+                <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+            </svg>
+        </span>
+        <input v-model="searchProject" class=" pl-3 pr-1 sm:px-4 py-2 rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" id="name" name="name" type="search" required="" placeholder="Search Projects" aria-label="Name" />
+    </div>
+    <section class="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-8 md:gap-4 sm:gap-2 place-items-center">
+
+        <div v-for="pic in filteredProjects" :key="pic.id" class="card w-fit bg-base-100 shadow-xl">
+            <figure><img :src="pic.url" :alt="pic.details" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">{{pic.title}}</h2>
+                <p>{{pic.descrip}}</p>
+                <div class="card-actions justify-end">
+                    <button v-if="pic.nodata == false" class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" @click="$router.push('/item/ ' + pic.id)">View</button>
+                    <button v-else class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500 cursor-not-allowed">Working on</button>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </section>
 </template>
 
 <script>
+
 export default {
     data() {
         return {
-            pict: [{
-                    nodata: false,
+            searchProject: '',
+            pict: [
+                {
+                    nodata: true,
                     id: 1,
+                    title: 'BLook',
+                    descrip: 'Mobile Booking Application',
                     details: 'Project One',
                     url: require(`../assets/img/Blook.png`),
                 },
                 {
-                    nodata: false,
+                    nodata: true,
                     id: 2,
+                    title: 'CHED',
+                    descrip: 'Web-based application',
                     details: 'Project Two',
                     url: require(`../assets/img/chedDash.png`),
                 },
                 {
                     nodata: true,
                     id: 3,
+                    title: 'Porfolio',
+                    descrip: 'Responsive Website',
                     details: 'Design One',
                     url: require(`../assets/img/Design1.png`),
                 },
                 {
-                    nodata: false,
+                    nodata: true,
                     id: 4,
+                    title: 'AgriCom',
+                    descrip: 'Web-based Ecommerce application for farmers',
                     details: 'Design Two',
                     url: require(`../assets/img/Design2.png`),
                 },
             ],
         }
     },
-    computed: {}
+    computed: {
+        filteredProjects() {
+            if (this.searchProject) {
+                return this.filterProjectsBySearch();
+            }
+            return this.pict;
+        },
+    },
+    methods: {
+        filterProjectsBySearch() {
+            let project = new RegExp(this.searchProject, 'i');
+            return this.pict.filter((el) => el.descrip.match(project));
+        },
+    }
 }
 </script>
 
 <style>
-/* https://github.com/an-object-is-a/html-css-js-pinterest-layout/blob/main/index.html */
-:root {
-    --card_width: 400px;
-    --row_increment: 10px;
-    --card_small: 26;
-    --card_medium: 33;
-    --card_large: 45;
-}
-.hero-contentt {
-    z-index: 0;
-    align-items: center;
-    justify-content: center;
-    max-width: 80rem/* 1280px */;
-}
-
-.pin_container {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--card_width));
-    grid-auto-rows: var(--row_increment);
-    justify-content: center;
-    place-items: center;
-    justify-items: center;
-}
-
-.card {
-    padding: 0;
-    margin: 10px 10px;
-    background-color: transparent;
-    border-radius: 0;
-    border: 0px;
-    border-style: solid;
-    border-color: rgb(112, 112, 112);
-}
-
-.card:hover {
-    border-color: rgb(199, 199, 199);
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px;
-}
-
-.card_small {
-    grid-row-end: span var(--card_small);
-}
-
-/* .card_medium {
-    grid-row-end: span var(--card_medium);
-}
-.card_large {
-    grid-row-end: span var(--card_large);
-} */
 </style>

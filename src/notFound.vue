@@ -1,5 +1,8 @@
 <template>
-  Not found page
+<section class="flex justify-center items-center">
+    Not found page
+
+</section>
 </template>
 
 <script>
