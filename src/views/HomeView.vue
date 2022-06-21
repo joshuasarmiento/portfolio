@@ -12,7 +12,7 @@
                 {{text}}
             </p>
         </div>
-        <div class="pr-12 m-8">
+        <div class="pr-12 m-8 sm:pr-0 xs:pr-0">
             <img :src="pictureHover" alt="Section One Image" class="h-48 md:h-32 sm:h-48 xs:h-56" @mouseover="hover = true" @mouseleave="hover = false" />
         </div>
     </div>
