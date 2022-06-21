@@ -3,6 +3,6 @@ module.exports = defineConfig({
   transpileDependencies: true,
 })
 
-// module.exports = {
-//   publicPath: '/portfolio/'
-// }
+module.exports = {
+  publicPath: '/portfolio/'
+}
