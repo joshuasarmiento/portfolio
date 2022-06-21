@@ -20,7 +20,7 @@ export default {
 					></i>
 					<a
 						href="#"
-						class="text-lg mb-4 text-ternary-dark dark:text-ternary-light"
+						class="text-lg mb-4 text-primary-dark dark:text-primary-light"
 						:class="
 							contact.icon === 'mail' || contact.icon === 'phone'
 								? 'hover:underline cursor-pointer'
