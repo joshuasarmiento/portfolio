@@ -1,6 +1,7 @@
 <template>
 <section class="container mx-auto">
-    <div class="flex md:flex-col sm:flex-col xs:flex-col justify-between items-center max-full">
+    <PageLoader v-if="!pictureHover"/>
+    <div v-else class="flex md:flex-col sm:flex-col xs:flex-col justify-between items-center max-full">
         <div class="flex flex-col text-left w-1/2 md:w-3/4 sm:w-2/3 xs:w-2/3 px-8">
             <span class="text-4xl font-semibold pb-2 primary-color">Hi, I'm Joshua</span>
             <article>
@@ -27,6 +28,7 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 // import Projectoverview from '@/components/ProjectOverview.vue'
+import PageLoader from '@/reusable/PageLoader'
 
 export default {
     name: 'HomeView',
@@ -40,6 +42,7 @@ export default {
     },
     components: {
         // Projectoverview,
+        PageLoader,
     },
     computed: {
         pictureHover() {
@@ -49,7 +52,7 @@ export default {
                 return this.p1
             }
         },
-    }
+    },
 }
 </script>
 

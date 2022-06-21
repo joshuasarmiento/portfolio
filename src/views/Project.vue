@@ -10,7 +10,7 @@
 import ProjectOverview from '@/components/ProjectOverview'
 export default {
     components: {
-        ProjectOverview
+        ProjectOverview,
     }
 }
 </script>

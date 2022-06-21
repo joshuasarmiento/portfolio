@@ -1,4 +1,5 @@
 <template>
+<PageLoader v-if="!employment"/>
 <section class="container mx-auto">
     <div class="flex items-end justify-start">
         <div class="flex-col justify-between items-center max-full px-8 space-y-4">
@@ -29,6 +30,8 @@
 </template>
 
 <script>
+import PageLoader from '@/reusable/PageLoader'
+
 export default {
     data() {
         return {
@@ -43,5 +46,6 @@ export default {
             }, ],
         }
     },
+    components: {PageLoader}
 }
 </script>

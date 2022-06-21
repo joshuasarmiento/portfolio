@@ -1,5 +1,6 @@
 <template>
-<section class="px-8">
+<PageLoader v-if="!pict"/>
+<section v-else class="px-8">
     <div class="space-y-2 flex flex-col items-start justify-center pb-8">
         <span class="text-2xl font-semibold text-primary-color">Projects</span>
         <p>This page contains some of the projects I've worked on. Other projects are currently working on.</p>
@@ -30,13 +31,13 @@
 </template>
 
 <script>
+import PageLoader from '@/reusable/PageLoader'
 
 export default {
     data() {
         return {
             searchProject: '',
-            pict: [
-                {
+            pict: [{
                     nodata: true,
                     id: 1,
                     title: 'BLook',
@@ -71,6 +72,7 @@ export default {
             ],
         }
     },
+    components: {PageLoader},
     computed: {
         filteredProjects() {
             if (this.searchProject) {
