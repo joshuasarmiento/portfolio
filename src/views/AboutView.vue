@@ -2,7 +2,7 @@
 <PageLoader v-if="!employment"/>
 <section v-else class="2xl:container 2xl:mx-auto xl:container xl:mx-auto lg:container lg:mx-auto ">
     <div class="flex px-8 sm:flex-col xs:flex-col items-end justify-start sm:justify-center xs:justify-center sm:items-center xs:items-center sm:space-y-4 xs:space-y-4">
-        <div class="flex-col justify-between items-center max-full px-8 sm:px-0 space-y-4">
+        <div class="flex-col justify-between items-center max-full sm:px-0 space-y-4 pr-8">
             <span class="text-2xl font-semibold sm:hidden xs:hidden">About Joshua</span>
             <img :src="p1" alt="Section One Image" class="mask h-48 sm:h-64 xs:h-56 sm:mask-circle xs:mask-circle shadow-sm rounded-lg border" @mouseover="hover = true" @mouseleave="hover = false" />
         </div>
