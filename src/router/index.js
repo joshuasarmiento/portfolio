@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import ItemView from '../views/ItemView.vue'
 import Project from '../views/Project.vue'
+import Contact from '../views/Contact.vue'
 import NotFound404 from '../404.vue'
 
 const routes = [
@@ -28,6 +29,14 @@ const routes = [
     component: Project,
     meta: {
 			title: 'Joshua - Project',
+		},
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact,
+    meta: {
+			title: 'Joshua - Contact',
 		},
   },
   {

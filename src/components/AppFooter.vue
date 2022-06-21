@@ -11,7 +11,7 @@ export default {
                     id: 1,
                     name: 'GitHub',
                     icon: 'github',
-                    url: 'https://github.com/returnjosh',
+                    url: 'https://github.com/joshuasarmiento',
                 },
                 {
                     id: 2,
