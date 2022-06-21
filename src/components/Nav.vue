@@ -7,7 +7,7 @@
                 <span class="font-semibold text-2xl sm:invisible xs:invisible text-primary-color pl-2"> JOSHUA </span>
             </button>
             <div class="flex  items-end justify-end space-x-4">
-                <router-link class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" to="/">Work</router-link>
+                <router-link class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" to="/">Home</router-link>
                 <router-link class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" to="/about">About</router-link>
                 <router-link class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" to="/project">Project</router-link>
                 <!-- <router-link to="/about">About</router-link> -->
