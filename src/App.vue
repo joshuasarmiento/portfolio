@@ -1,8 +1,13 @@
 <template>
-<Nav />
-<transition name="fade" mode="out-in">
+<Nav class="mb-12"/>
+<!-- <router-view v-slot="{ Component }">
+  <transition name="fade" mode="out-in">
+    <component :is="Component" />
+  </transition>
+</router-view> -->
+  <transition name="fade" mode="out-in">
     <router-view />
-</transition>
+  </transition>
 <AppFooter />
 </template>
 
@@ -25,7 +30,6 @@ export default {
 #app {
     font-family: 'Montserrat', sans-serif;
 }
-
 
 .fade-enter-active {
     animation: coming 0.4s;
