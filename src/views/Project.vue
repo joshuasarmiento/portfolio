@@ -1,6 +1,6 @@
 <template>
 <section>
-    <div class="container mx-auto">
+    <div class="2xl:container 2xl:mx-auto xl:container xl:mx-auto lg:container lg:mx-auto sm:px-0 sm:max-w-full xs:px-0">
         <ProjectOverview />
     </div>
 </section>

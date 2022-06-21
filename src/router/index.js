@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import ItemView from '../views/ItemView.vue'
 import Project from '../views/Project.vue'
-import NotFound404 from '../notFound.vue'
+import NotFound404 from '../404.vue'
 
 const routes = [
   {

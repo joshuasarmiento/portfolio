@@ -2,8 +2,8 @@
 <section class="2xl:container 2xl:mx-auto xl:container xl:mx-auto lg:container lg:mx-auto sm:px-0 sm:max-w-full xs:px-0">
     <PageLoader v-if="!pictureHover"/>
     <div v-else class="flex sm:flex-col xs:flex-col justify-between items-center">
-        <div class="flex flex-col text-left w-1/2 md:w-3/4 sm:w-2/3 xs:w-2/3 px-8">
-            <span class="text-4xl font-semibold pb-2 primary-color">Hi, I'm Joshua</span>
+        <div class="flex flex-col text-left w-1/2 md:w-3/4 sm:w-full xs:w-full px-8">
+            <span class="text-4xl font-semibold pb-2 primary-color sm:text-2xl xs:text-2xl">Hi, I'm Joshua</span>
             <article>
                 Front End Dev, Design, <span class="text-gray-600 hover:text-gray-500 dark:hover:text-gray-400  rounded-lg border hover:bg-gray-100 shadow-sm p-2 duration-500">Single :)</span>
             </article>

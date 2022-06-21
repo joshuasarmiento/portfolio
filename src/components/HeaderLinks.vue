@@ -16,6 +16,11 @@
 <script>
 export default {
     props: ['isOpen'],
+    data() {
+        return {
+            activeBtn: 1,
+        }
+    },
 }
 </script>
 

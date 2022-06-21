@@ -1,5 +1,5 @@
 <template>
-<nav class="container mx-auto md:px-0 md:max-w-full sm:px-0 xs:px-0">
+<nav class="2xl:container 2xl:mx-auto xl:container xl:mx-auto lg:container lg:mx-auto">
     <div class="items-center justify-between px-8 py-4 z-10 max-w-full block my-6">
         <div class="flex justify-between items-center md:px-0 sm:px-0 xs:px-0">
             <button @click="$router.push('/')" class="flex items-center justify-center">
