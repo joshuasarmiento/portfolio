@@ -1,5 +1,5 @@
 <template>
-<Nav class="mb-12"/>
+<Nav class="mb-12 sm:mb-8 xs:mb-0"/>
 <!-- <router-view v-slot="{ Component }">
   <transition name="fade" mode="out-in">
     <component :is="Component" />
