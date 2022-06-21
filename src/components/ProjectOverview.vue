@@ -2,7 +2,7 @@
 <PageLoader v-if="!pict"/>
 <section v-else class="px-8">
     <div class="space-y-2 flex flex-col items-start justify-center pb-8">
-        <span class="text-2xl font-semibold text-primary-color">Projects</span>
+        <span class="text-4xl font-semibold text-primary-color sm:text-2xl xs:text-2xl">Projects</span>
         <p>This page contains some of the projects I've worked on. Other projects are currently working on.</p>
     </div>
     <div class="flex gap-2 py-4">
