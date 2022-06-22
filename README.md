@@ -1,4 +1,6 @@
-# vuesample
+# Vue js and Tailwind Css  Portfolio
+
+A simple online portfolio built with Vuejs 3 and Tailwindcss 3 
 
 ## Project setup
 ```
