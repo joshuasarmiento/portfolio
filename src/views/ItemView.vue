@@ -56,13 +56,15 @@
                         </div>
                         <div class="divider w-1/2 py-8"></div>
                         <div class="w-fit">
-                            <div class="font-semibold text-xl pb-4">Contributors</div>
+                            <div class="font-semibold text-xl pb-4">
+                                Contributors 
+                                <div class="badge">{{data.contributor.length}}</div></div>
                             <div class="">
                             <div class="avatar-group -space-x-6">
                                 <div v-for="contri in data.contributor" :key="contri.contributor"  class="avatar">
                                     <div class="w-12">
                                         <a :href="contri.link" target="__blank" class="cursor-pointer">
-                                            <img :src="contri.image" />
+                                            <img :src="contri.image" :alt="contri.name"/>
                                         </a> 
                                     </div>
                                 </div>
@@ -131,6 +133,11 @@ export default {
                         image: require('../assets/img/Blook/Contributors/SaqPic.jpg'),
                         link: 'https://www.facebook.com/xxttian',
                         name: 'Christian A. Saquillo'
+                    },
+                    {
+                        image: require('../assets/img/joshua.jpg'),
+                        link: 'https://www.linkedin.com/in/joshuasarmiento/',
+                        name: 'Joshua A. Sarmiento'
                     }
                 ],
             }],
