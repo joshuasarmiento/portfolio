@@ -32,9 +32,7 @@ npm run serve
 ## Notes
 
 -   Always run `npm install` after pulling new changes
--   Feel free to use it as your own portfolio
 -   Contributions are welcome
--   Credits for design other configurations [here](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
