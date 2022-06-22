@@ -7,6 +7,7 @@ export default {
     },
     data() {
         return {
+            publicPath: process.env.BASE_URL,
             socials: [{
                     id: 1,
                     name: 'GitHub',
@@ -48,7 +49,7 @@ export default {
     <div class="pt-10 sm:pt-30 pb-8 mt-20 border-t-2">
         <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
             <div class="tooltip mb-10" data-tip="Hire me!">
-                <a download="JoshuaSarmiento-Resume.pdf" target="__blank" href="./files/JoshuaSarmientoResume.pdf" class=" flex text-gray-600 hover:text-primary-light dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-primary-dark shadow-sm p-3 duration-500">
+                <a download="JoshuaSarmientoResume.pdf" href="./files/JoshuaSarmientoResume.pdf" class=" flex text-gray-600 hover:text-primary-light dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-primary-dark shadow-sm p-3 duration-500">
                     <i data-feather="arrow-down-circle" class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"></i>
                     <span> Download CV </span>
                 </a>
