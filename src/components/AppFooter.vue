@@ -29,7 +29,7 @@ export default {
                     id: 3,
                     name: 'LinkedIn',
                     icon: 'linkedin',
-                    url: 'linkedin.com/in/joshuasarmiento/',
+                    url: 'https://www.linkedin.com/in/joshuasarmiento/',
                 },
             ],
         };
@@ -48,7 +48,7 @@ export default {
     <div class="pt-10 sm:pt-30 pb-8 mt-20 border-t-2">
         <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
             <div class="tooltip mb-10" data-tip="Hire me!">
-                <a download="JoshuaSarmiento-Resume.pdf" target="__blank" href="./files/JoshuaSarmientoResume.pdf" class=" flex text-gray-600 hover:text-indigo-400 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-primary-color shadow-sm p-3 duration-500">
+                <a download="JoshuaSarmiento-Resume.pdf" target="__blank" href="./files/JoshuaSarmientoResume.pdf" class=" flex text-gray-600 hover:text-primary-light dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-primary-dark shadow-sm p-3 duration-500">
                     <i data-feather="arrow-down-circle" class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"></i>
                     <span> Download CV </span>
                 </a>
@@ -56,7 +56,7 @@ export default {
             <!-- Footer social links -->
             <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
                 <ul class="flex gap-4 sm:gap-8">
-                    <a v-for="social in socials" :key="social.id" :href="social.url" target="__blank" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm p-4 duration-500">
+                    <a v-for="social in socials" :key="social.id" :href="social.url" target="__blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-400 cursor-pointer rounded-lg border hover:bg-gray-100 shadow-sm hover:shadow-md p-4 duration-500">
                         <i :data-feather="social.icon" class="w-5 sm:w-8 h-5 sm:h-8"></i>
                     </a>
                 </ul>

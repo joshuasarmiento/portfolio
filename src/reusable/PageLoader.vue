@@ -1,6 +1,6 @@
 <template>
 <div class="flex justify-center items-center text-2xl text-primary-color font-semibold" v-if="!isloaded">
-    Loading...
+    Oops something went wrong...
 </div>
 </template>
 

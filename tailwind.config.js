@@ -10,13 +10,13 @@ module.exports = {
       logs: true,
       rtl: false,
       prefix: "",
-      darkTheme: "lofi",
+      darkTheme: "forest",
     },
     theme: {
       extend: {
         colors: {
           'primary-dark': '#262D33',
-          'primary-white': '#ffffff'
+          'primary-light': '#ffffff'
         },
         screens: {
           'xs': {'min': '360px', 'max': '639px'},

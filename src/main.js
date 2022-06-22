@@ -6,4 +6,3 @@ import './assets/tailwind.css'
 createApp(App)
         .use(router)
         .mount('#app');
-

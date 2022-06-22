@@ -1,18 +1,27 @@
 <template>
-<Nav class="mb-12 sm:mb-8 xs:mb-0"/>
-<!-- <router-view v-slot="{ Component }">
-  <transition name="fade" mode="out-in">
-    <component :is="Component" />
-  </transition>
-</router-view> -->
-  <transition name="fade" mode="out-in">
-    <router-view />
-  </transition>
-<AppFooter />
+<div>
+    <!-- Header -->
+    <AppHeader class="mb-12 sm:mb-8 xs:mb-0 " />
+
+    <!-- Not Working -->
+    <!-- <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+            <component :is="Component" />
+        </transition>
+    </router-view> -->
+
+    <!-- Router View With Transition -->
+    <transition name="fade" mode="out-in">
+        <router-view />
+    </transition>
+    
+    <!-- Fotter -->
+    <AppFooter />
+</div>
 </template>
 
 <script>
-import Nav from '@/components/Nav.vue'
+import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 
 export default {
@@ -20,7 +29,7 @@ export default {
         return {}
     },
     components: {
-        Nav,
+        AppHeader,
         AppFooter,
     },
 }
@@ -29,6 +38,9 @@ export default {
 <style>
 #app {
     font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-align: center; */
 }
 
 .fade-enter-active {

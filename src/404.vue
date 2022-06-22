@@ -1,15 +1,7 @@
 <template>
-<section class="flex justify-center items-center font-semibold uppercase">
-    Page Not Found
+<!-- Page Not Found -->
+<section class="flex justify-center items-center text-4xl font-semibold uppercase text-primary-dark">
+    404
 </section>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>
