@@ -10,9 +10,11 @@
             <article>
                 {{article}}
             </article>
-            <div class="divider w-10"></div>
-            <p class="text-sm">
-                {{text}}
+            <div class="flex items-center justify-start">
+                <div class="divider w-10 pr-4"></div> Technical Skills
+            </div>
+            <p v-for="t in text" :key="t" class="badge text-sm">
+                {{t}}
             </p>
         </section>
     </div>
@@ -36,8 +38,8 @@ export default {
     data() {
         return {
             p1: require("../assets/img/joshua.jpg"),
-            article: 'A fresh graduate in Information Technology seeking to broaden my experiences and expertise. A well-rounded person with an interest in front-end web or mobile development, as well as the UI/UX field.',
-            text: "I love design, user interfaces, web or mobile development and that's what I'm passionate about",
+            article: 'A fresh graduate in Information Technology. Have 6 months of internship experience and expertise in Software Development as well as UI and UX design. Currently studying React JS Framework and Robotics Automation Process for certification.',
+            text: ["HTML", "CSS", "JavaScript", "PHP", "Python", "C", "C++", "Npm", "Vuejs", "Node.js", "Github", "Git", "Figma", "Adobe XD", "Invision", "Flutter", "MySQL", "MongoDB", "Oracle Database", "VS Code", "Jira", "UIPath"],
             employment: [{
                 title: 'Web Developer',
                 add: "CHED, Legazpi City",

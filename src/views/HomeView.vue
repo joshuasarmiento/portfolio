@@ -29,7 +29,7 @@ export default {
             p1: require("../assets/img/myPic.png"),
             p1hover: require("../assets/img/myPichover.png"),
             hover: false,
-            text: 'As of the moment I am interested in creating web/mobile design & typography.'
+            text: ''
         }
     },
     components: {
