@@ -5,7 +5,7 @@ import ItemView from '../views/ItemView.vue'
 import Project from '../views/Project.vue'
 import Contact from '../views/Contact.vue'
 import NotFound404 from '../404.vue'
-
+ 
 const routes = [
   {
     path: '/',
@@ -32,18 +32,18 @@ const routes = [
 		},
   },
   {
+    path: '/project/:title',
+    name: 'itemview',
+    component: ItemView,
+    props: true,
+  },
+  {
     path: '/contact',
     name: 'contact',
     component: Contact,
     meta: {
 			title: 'Joshua - Contact',
 		},
-  },
-  {
-    path: '/item/:id',
-    name: 'itemview',
-    component: ItemView,
-    props: true,
   },
   {
     path: "/:pathMatch(.*)*",

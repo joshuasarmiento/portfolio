@@ -5,7 +5,7 @@
         <div class="flex flex-col text-left w-1/2 md:w-3/4 sm:w-full xs:w-full px-8">
             <span class="text-4xl font-semibold pb-4 primary-color sm:text-2xl xs:text-2xl">Hi, I'm Joshua</span>
             <article>
-                Front End Dev, Design, RPA
+                Web Developer & Designer
             </article>
             <div class="divider w-8"></div>
             <p class="text-md w-full md:w-2/3">

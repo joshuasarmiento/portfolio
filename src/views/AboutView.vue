@@ -13,7 +13,7 @@
             <div class="flex items-center justify-start">
                 <div class="divider w-10 pr-4"></div> Technical Skills
             </div>
-            <p v-for="t in text" :key="t" class="badge text-sm">
+            <p v-for="t in text" :key="t" class="badge bg-primary-dark text-sm">
                 {{t}}
             </p>
         </section>
@@ -38,8 +38,8 @@ export default {
     data() {
         return {
             p1: require("../assets/img/joshua.jpg"),
-            article: 'A fresh graduate in Information Technology. Have 6 months of internship experience and expertise in Software Development as well as UI and UX design. Currently studying React JS Framework and Robotics Automation Process for certification.',
-            text: ["HTML", "CSS", "JavaScript", "PHP", "Python", "C", "C++", "Npm", "Vuejs", "Node.js", "Github", "Git", "Figma", "Adobe XD", "Invision", "Flutter", "MySQL", "MongoDB", "Oracle Database", "VS Code", "Jira", "UIPath"],
+            article: 'A fresh graduate in Information Technology. Have 6 months of internship experience and expertise in Software Development as well as UI and UX design.',
+            text: ["HTML", "CSS", "JavaScript", "PHP", "Python", "C#", "C++", "Npm", "Vuejs", "Node.js", "Github", "Git", "Figma", "Adobe XD", "Invision", "Flutter", "MySQL", "MongoDB", "Oracle Database", "VS Code", "Jira", "UIPath"],
             employment: [{
                 title: 'Web Developer',
                 add: "CHED, Legazpi City",

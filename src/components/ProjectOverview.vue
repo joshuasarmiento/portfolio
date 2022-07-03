@@ -15,7 +15,28 @@
     </div>
     <section class="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-8 md:gap-4 sm:gap-2 place-items-center">
         <div v-for="pic in filteredProjects" :key="pic.id" class="card rounded-md w-fit bg-base-100 shadow-xl">
-            <label v-if="pic.nodata == false" @click="$router.push('/item/ ' + pic.id)" class="cursor-pointer shadow-md">
+            <!-- @click="$router.push('/item/ ' + pic.id)"  -->
+              <!-- v-if="pic.nodata == false"  -->
+            <router-link 
+            v-if="!pic.nodata || pic.data" 
+            class="cursor-pointer shadow-md"
+            :to="{
+                name: 'itemview',
+                params: {
+                    id: pic.id,
+                    title: pic.title,
+                    descrip: pic.descrip,
+                    titleDesc: pic.titleDesc,
+                    date: pic.date,
+                    role: pic.role,
+                    image1: pic.image1,
+                    image2: pic.image2,
+                    client: pic.client,
+                    objective: pic.objective,
+                    tools: pic.tools,
+                },
+            }"
+            >
                 <figure><img :src="pic.url" :alt="pic.details" /></figure>
                 <div class="card-body">
                     <div class="">
@@ -24,9 +45,9 @@
                     </div>
                     <p class="rounded-md">{{pic.descrip}}</p>
                 </div>
-            </label>
+            </router-link >
             <label v-else class="">
-                <figure><img :src="pic.url" :alt="pic.details" /></figure>
+                <figure><img :src="pic.url" :alt="pic.details"/></figure>
                 <div class="card-body">
                     <div class="flex justify-start items-center">
                         <h2 class="card-title text-primary-color pr-2">{{pic.title}}</h2>
@@ -74,7 +95,6 @@ export default {
             return this.projects.filter((el) => el.descrip.match(project));
         },
     },
-
 }
 </script>
 

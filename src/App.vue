@@ -12,6 +12,7 @@
 
     <!-- Router View With Transition -->
     <transition name="fade" mode="out-in">
+        <!-- :key="this.$route.path" -->
         <router-view />
     </transition>
     
