@@ -6,15 +6,15 @@
         <p>{{description}}</p>
     </div>
     <div class="flex gap-2 py-4">
-        <span class="rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500 cursor-pointer">
+        <!-- <span class="rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500 cursor-pointer">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="text-black">
                 <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
             </svg>
-        </span>
+        </span> -->
         <input v-model="searchProject" class="px-4 pr-1 sm:px-4 py-2 rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" id="name" name="name" type="search" required="" placeholder="Search Projects" aria-label="Name" />
     </div>
     <section class="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-8 md:gap-4 sm:gap-2 place-items-center">
-        <div v-for="pic in filteredProjects" :key="pic.id" class="card rounded-md w-fit bg-base-100 shadow-xl">
+        <div v-for="pic in filteredProjects" :key="pic.id" class="card rounded-md bg-base-100 shadow-xl">
             <!-- @click="$router.push('/item/ ' + pic.id)"  -->
               <!-- v-if="pic.nodata == false"  -->
             <router-link 
@@ -34,14 +34,15 @@
                     client: pic.client,
                     objective: pic.objective,
                     tools: pic.tools,
+                    challenge: pic.challenge,
+                    repo: pic.repo,
                 },
             }"
             >
-                <figure><img :src="pic.url" :alt="pic.details" /></figure>
+                <figure><img class="" :src="pic.url" :alt="pic.details" /></figure>
                 <div class="card-body">
                     <div class="">
-                        <h2 class="card-title text-primary-color">{{pic.title}}
-                        </h2>
+                        <h2 class="card-title text-primary-color">{{pic.title}}</h2>
                     </div>
                     <p class="rounded-md">{{pic.descrip}}</p>
                 </div>

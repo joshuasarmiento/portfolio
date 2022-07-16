@@ -44,14 +44,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <section class="w-full pt-8 space-y-4">
+                    <section class="w-full pt-8 space-y-4">
                         <span class="font-semibold text-xl">Challenge</span>
-                        <div v-for="chal in challenge" :key="chal.title1">
-                            <p>{{chal.title1}}</p>
-                            <p>{{chal.title2}}</p>
-                            <p>{{chal.title3}}</p>
+                        <div v-for="chal in challenge" :key="chal" class="pb-2">
+                            <p>{{chal}}</p>
                         </div>
                     </section>
+
+                    <div class="space-x-2 pt-8">
+                        <a :href="repo" rel="noopener" target="_blank" class="text-gray-100 hover:text-gray-600 cursor-pointer rounded-lg border bg-primary-dark hover:bg-gray-100 shadow-sm py-3 px-8 duration-500" >
+                            Repo
+                        </a>
+                    </div>
+                   <!--
                     <section class="w-fit">
                         <div class="divider w-1/2 py-8"></div>
                         <div class="font-semibold text-xl pb-4">
@@ -77,7 +82,7 @@
 
 <script>
 import feather from 'feather-icons';
-import projects from '../data/projects.js'
+import projects from '../data/projects.js';
 
 export default {
     components: {},
@@ -93,6 +98,8 @@ export default {
         'client',
         'objective',
         'tools',
+        'challenge',
+        'repo',
     ],
     data() {
         return {
