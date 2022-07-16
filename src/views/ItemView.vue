@@ -51,11 +51,19 @@
                         </div>
                     </section>
 
-                    <div class="space-x-2 pt-8">
+                   <div class="flex space-x-4">
+                        <div class="space-x-2 pt-8">
                         <a :href="repo" rel="noopener" target="_blank" class="text-gray-100 hover:text-gray-600 cursor-pointer rounded-lg border bg-primary-dark hover:bg-gray-100 shadow-sm py-3 px-8 duration-500" >
                             Repo
                         </a>
                     </div>
+                    <div v-if="liveLink != ''" class="space-x-2 pt-8">
+                        <a :href="liveLink" rel="noopener" target="_blank" class="text-gray-100 hover:text-gray-600 cursor-pointer rounded-lg border bg-primary-dark hover:bg-gray-100 shadow-sm py-3 px-8 duration-500" >
+                            Live
+                        </a>
+                    </div>
+                    <div v-else></div>
+                   </div>
                    <!--
                     <section class="w-fit">
                         <div class="divider w-1/2 py-8"></div>
@@ -100,6 +108,8 @@ export default {
         'tools',
         'challenge',
         'repo',
+        'liveLink',
+        'live',
     ],
     data() {
         return {

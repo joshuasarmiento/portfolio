@@ -36,6 +36,8 @@
                     tools: pic.tools,
                     challenge: pic.challenge,
                     repo: pic.repo,
+                    liveLink: pic.liveLink,
+                    live: pic.live
                 },
             }"
             >

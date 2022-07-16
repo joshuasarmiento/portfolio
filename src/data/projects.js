@@ -4,6 +4,7 @@
 const projects = [
 	{
 		nodata: false,
+		live: false,
 		id: 1,
 		title: 'BLook',
 		descrip: 'Mobile Application',
@@ -23,6 +24,7 @@ const projects = [
 			"The test resulted in an overall positive response, with client users successfully completing the appointment schedule via the mobile application. Using the formula in calculating the SUS score, Client application got a average score of 75% while the shop owner application with the average score of 68%."		
 		],
 		repo: 'https://github.com/joshuasarmiento/blook_app',
+		liveLink: '',
 		contributor: [
 			{
 				"image": require('../assets/img/Blook/Contributors/JeffPic.jpg'),
@@ -43,6 +45,7 @@ const projects = [
 	},
 	{
 		nodata: false,
+		live: false,
 		id: 2,
 		title: 'CHEDROV',
 		descrip: 'Web application',
@@ -62,6 +65,7 @@ const projects = [
 			"The CHED Programs Application Management System was developed in order to have a more efficient and effective way of managing HEIs program applications. This system should take away the hassle of the manual application process that the CHED is currently implementing.",   
 		],
 	   repo: 'https://github.com/Sevsssssss/capp',	
+	   liveLink: '',
 	   contributor: [
 		   {
 			   "image": require('../assets/img/Blook/Contributors/JeffPic.jpg'),
@@ -92,6 +96,7 @@ const projects = [
 	},
 	{
 		nodata: false,
+		live: true,
 		id: 3,
 		title: 'Recipe Api',
 		descrip: 'Web Application',
@@ -106,6 +111,7 @@ const projects = [
 		objective: 'A web application that consumes data coming from https://www.edamam.com/ API..',
 		tools: ["Firebase", "Visual Studio Code", "Tailwind Css", "Vuejs", "Vuex"],
 		repo: 'https://github.com/joshuasarmiento/RecipeAPI',
+		liveLink: 'https://jocular-bavarois-008dc0.netlify.app/#/login',
 		challenge: [
 			'This web application is an assessment for frontend developers, building simple web applications and retrieving API data', 
 			'The web application includes the following features: Signup and Login Page. Home page - display recipe data from /api/recipes/v2 endpoint, Lazy loading when displaying the data, Search recipe functionality, A page to view other details of a specific recipe, Logout functionality, Lazy Loading List (New) and Vue Toast (New)',
