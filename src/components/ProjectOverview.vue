@@ -13,7 +13,7 @@
         </span> -->
         <input v-model="searchProject" class="px-4 pr-1 sm:px-4 py-2 rounded-lg border hover:bg-gray-100 shadow-sm p-3 duration-500" id="name" name="name" type="search" required="" placeholder="Search Projects" aria-label="Name" />
     </div>
-    <section class="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-8 md:gap-4 sm:gap-2 place-items-center">
+    <section class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-8 md:gap-4 sm:gap-2 place-items-center">
         <div v-for="pic in filteredProjects" :key="pic.id" class="card rounded-md bg-base-100 shadow-xl">
             <!-- @click="$router.push('/item/ ' + pic.id)"  -->
               <!-- v-if="pic.nodata == false"  -->

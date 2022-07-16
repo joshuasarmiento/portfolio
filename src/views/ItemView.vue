@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="2xl:container 2xl:mx-auto xl:container xl:mx-auto lg:container lg:mx-auto sm:px-0 sm:max-w-full xs:px-0 text-primary-dark">
+    <div class="2xl:container 2xl:mx-auto xl:container xl:mx-auto lg:container lg:mx-auto sm:px-0 sm:max-w-full xs:px-0">
         <div class="px-8">
             <!-- title -->
             <span class="font-semibold text-4xl sm:text-2xl xs:text-2xl">

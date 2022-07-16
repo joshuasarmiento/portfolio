@@ -5,7 +5,7 @@
             <button @click="$router.push('/')" class="flex items-center justify-center">
                 <img v-if="darkTheme === 'forest'" src="@/assets/img/svg/logoWhite.svg" alt="Logo Dark" class="h-10 sm:h-8 xs:h-8">
                 <img v-else src="@/assets/img/svg/logoDark.svg" alt="Logo Dark" class="h-10 sm:h-8 xs:h-8">
-                <span class="font-semibold text-2xl sm:text-lg xs:text-lg pl-2 dark:text-primary-light"> JOSHUA </span>
+                <span class="font-semibold text-2xl sm:text-lg xs:text-lg pl-2"> JOSHUA </span>
             </button>
             <HeaderLinks :isOpen="isOpen" class="" />
             <div class="2xl:hidden xl:hidden lg:hidden md:hidden">
