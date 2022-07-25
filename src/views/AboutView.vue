@@ -29,13 +29,11 @@
         <div class="flex items-center justify-start">
             <div class="divider w-10 pr-4"></div> Technical Skills
         </div>
-        <ul>
-            <li class="flex gap-2">
-                <p v-for="t in text" :key="t" class="text-sm rounded-md p-4 border w-fit">
-                    {{t}}
-                </p>
-            </li>
-        </ul>
+        <div class="flex md:grid md:grid-cols-5 sm:grid sm:grid-cols-3 xs:grid xs:grid-cols-2 gap-2">
+            <p v-for="t in text" :key="t" class="text-sm rounded-md p-4 border w-fit ">
+                {{t}}
+            </p>
+        </div>
     </section>
 </section>
 </template>
@@ -50,7 +48,7 @@ export default {
             article1: 'A fresh graduate in Information Technology. Have 6 months of internship experience and expertise in Web Development as well as UI and UX design.',
             article2: 'Since high school, computers have piqued my interest. I completed my information technology undergraduate degree at Ateneo de Naga University. I found web development and UI/UX to be fascinating disciplines. I had already focused on conducting user research and coding my design.',
             article3: 'I am passionate about my work. I enjoy what I do and enjoy learning new things. Being in the technology industry, I believe it is in my nature to broaden my knowledge.',
-            text: ["HTML", "CSS", "Npm", "Vuejs", "Node.js", "Github", "Git", "Figma", "Flutter", "MongoDB"],
+            text: ["HTML", "CSS", "Npm", "Vuejs", "Node.js", "Github", "Git", "Figma", "Flutter", "MongoDB", "SQL"],
             text2: ["Agile", "UI/UX Design", "Frontend Development", "Interactive Design", "Collaboration", "Project Management", "Network administration", "Operations & maintenance"],
             employment: [{
                 title: 'Project Lead, UI/UX Designer, Frontend Developer',
